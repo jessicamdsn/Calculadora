@@ -1,0 +1,41 @@
+   ::-webkit-scrollbar {
+       width: 12px;
+   }
+
+   ::-webkit-scrollbar-track {
+       background-color: #a293b3;
+   }
+
+   ::-webkit-scrollbar-thumb {
+       background-color: #310133;
+   }
+
+   body {
+       font: normal 15pt arial;
+       background-color: rgb(198, 182, 207);
+       color: aliceblue;
+   }
+
+   #titulo {
+       font-family: 'Lobster Two', cursive;
+       font-size: 70px;
+       text-align: center;
+       color: rgb(66, 20, 68);
+   }
+
+   div {
+       background-color: rgb(66, 20, 68);
+       width: 70%;
+       padding-top: 1%;
+       padding-left: 10%;
+       padding-bottom: 3%;
+       margin-left: 10%;
+       margin-top: 3%;
+
+   }
+
+   input {
+       font: normal 12pt arial;
+       width: 90px;
+       margin-bottom: 20px;
+   }
