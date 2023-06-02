@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+
+    <style>
+        ::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  background-color: #a293b3;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #310133;
+}
+        body{
+            font: normal 15pt arial;
+            background-color: rgb(198, 182, 207);
+            color: aliceblue;
+        }
+        #titulo{
+            font-family: 'Lobster Two', cursive;;
+            font-size: 70px;
+            text-align: center;
+            color: rgb(66, 20, 68);
+        }
+        div{
+            background-color: rgb(66, 20, 68);
+            width: 70%;
+            padding-top:1%;
+            padding-left:10%;
+            padding-bottom:3%;
+            margin-left: 10%;
+            margin-top: 3%;
+            border: 4px solid transparent;
+        }
+        input{
+            font: normal 12pt arial;
+            width: 90px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="titulo">Calculadora</h1>
+    <div>
+        <h1>Somando valores</h1>
+        <input type="number" name="txtn1" id="txtn1"> +
+        <input type="number" name="txtn2" id="txtn2">
+        <input type="button" value="Somar" onclick= "somar()">
+        <section id="Sres">Resultado:</section>
+    </div>
+    <div>
+        <h1>Multiplicando valores</h1>
+        <input type="number" name="m1" id="m1"> .
+        <input type="number" name="m2" id="m2">
+        <input type="button" value="Multiplicar" onclick= "multiplicar()" >
+        <section id="Mres">Resultado:</section>
+    </div>
+
+    <div>
+        <h1>Dividindo valores</h1>
+        <input type="number" name="d1" id="d1"> ÷
+        <input type="number" name="d2" id="d2">
+        <input type="button" value="Dividir" onclick= "dividir()" >
+        <section id="Dres">Resultado:</section>
+    </div>
+    
+    <script>
+         
+        function somar() {
+        var tn1 = window.document.getElementById ('txtn1')
+        var tn2 = window.document.getElementById ('txtn2')
+        var res = window.document.getElementById ('Sres')
+        var n1 = Number(tn1.value)
+        var n2 = Number(tn2.value)
+        var s = n1 + n2
+        res.innerHTML = `A soma entre ${n1} e ${n2} é igual a <strong> ${s} </strong>`
+        }
+
+        function multiplicar() {
+        var tn1 = window.document.getElementById ('m1')
+        var tn2 = window.document.getElementById ('m2')
+        var res = window.document.getElementById ('Mres')
+        var n1 = Number(tn1.value)
+        var n2 = Number(tn2.value)
+        var m = n1 * n2
+        res.innerHTML = `A Multiplicação entre ${n1} e ${n2} é igual a <strong> ${m} </strong>`
+        }
+
+        function dividir() {
+        var tn1 = window.document.getElementById ('d1')
+        var tn2 = window.document.getElementById ('d2')
+        var res = window.document.getElementById ('Dres')
+        var n1 = Number(tn1.value)
+        var n2 = Number(tn2.value)
+        var d = n1 / n2
+        res.innerHTML = `A divisão entre ${n1} e ${n2} é igual a <strong> ${d} </strong>`
+        }
+    </script>
+
+</body>
+</html>
