@@ -1,18 +1,69 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="reset.css" />
     <script src="javascript.js"></script>
-    
+
+    <title>Calculadora</title>
+
 </head>
+
 <body>
-    <h1 id="titulo">Calculadora</h1>
-    <div>
+    <header>
+        <h1 id="titulo">Calculadora</h1>
+    </header>
+
+    <main class="calculadora">
+
+        <div class="partedecima">
+            <section class="tela">
+                <select name="telinha" id="telinha" size="5"> 0</select>
+            </section>
+        </div>
+        <div class="partedebaixo">
+            <aside class="numeros">
+                <ul class="lista-numeros">
+                    <li class="botao"><input type="button" value="7"></li>
+                    <li class="botao"><input type="button" value="8"></li>
+                    <li class="botao"><input type="button" value="9"></li>
+                    <li class="botao"><input type="button" value="4"></li>
+                    <li class="botao"><input type="button" value="5"></li>
+                    <li class="botao"><input type="button" value="6"></li>
+                    <li class="botao"><input type="button" value="1"></li>
+                    <li class="botao"><input type="button" value="2"></li>
+                    <li class="botao"><input type="button" value="3"></li>
+                    <li class="zero"><input type="button" value="0"></li>
+                    <li class="ponto"><input type="button" value="."></li>
+                    
+                </ul>
+            </aside>
+
+            <aside class="operadores">
+                <ul class="lista-operadores">
+                    <li class="dividir"><input type="button" value="/"></li>
+                    <li class="delete"><input type="button" value="c"></li>
+                    <li class="vezes"><input type="button" value="x"></li>
+                    <li class="menos"><input type="button" value="-"></li>
+                    <li class="igual"><input type="button" value="="></li>
+                    <li class="mais"><input type="button" value="+"></li>
+                </ul>
+            </aside>
+        </div>
+    </main>
+
+
+
+    <!--<div>
         <h1>Somando valores</h1>
         <input type="number" name="txtn1" id="txtn1"> +
         <input type="number" name="txtn2" id="txtn2">
@@ -34,7 +85,8 @@
         <input type="button" value="Dividir" onclick= "dividir()" >
         <section id="Dres">Resultado:</section>
     </div>
-    
+    -->
 
 </body>
+
 </html>
