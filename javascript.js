@@ -1,5 +1,6 @@
 
-function somar() {
+
+/*function somar() {
     var tn1 = window.document.getElementById('txtn1')
     var tn2 = window.document.getElementById('txtn2')
     var res = window.document.getElementById('Sres')
@@ -28,3 +29,4 @@ function dividir() {
     var d = n1 / n2
     res.innerHTML = `A divisão entre ${n1} e ${n2} é igual a <strong> ${d} </strong>`
 }
+*/

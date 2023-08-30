@@ -22,45 +22,64 @@
     <header>
         <h1 id="titulo">Calculadora</h1>
     </header>
+    <form action="" name="Calculator">
+        <main class="calculadora">
 
-    <main class="calculadora">
+            <div class="partedecima">
+                <section class="tela">
+                    <input type="text" class="text maincolor" 
+					name="text1" disabled>
+                
+                </section>
+            </div>
+            <div class="partedebaixo">
+                <aside class="numeros">
+                    <ul class="lista-numeros">
+                        <li class="botao"><input type="button" name="btn7" class="num" value="7" onclick="displaynum(btn7.value)">
+                        </li>
+                        <li class="botao"><input type="button" name="btn8" value="8" onclick="displaynum(btn8.value)">
+                        </li>
+                        <li class="botao"><input type="button" name="btn9" value="9" onclick="displaynum(btn9.value)">
+                        </li>
+                        <li class="botao"><input type="button" name="btn4" value="4" onclick="displaynum(btn4.value)">
+                        </li>
+                        <li class="botao"><input type="button" name="btn5" value="5" onclick="displaynum(btn5.value)">
+                        </li>
+                        <li class="botao"><input type="button" name="btn6" value="6" onclick="displaynum(btn6.value)">
+                        </li>
+                        <li class="botao"><input type="button" name="btn1" value="1" onclick="displaynum(btn1.value)">
+                        </li>
+                        <li class="botao"><input type="button" name="btn2" value="2" onclick="displaynum(btn2.value)">
+                        </li>
+                        <li class="botao"><input type="button" name="btn3" value="3" onclick="displaynum(btn3.value)">
+                        </li>
+                        <li class="zero"><input type="button" name="btn0" value="0" onclick="displaynum(btn0.value)">
+                        </li>
+                        <li class="ponto"><input type="button" name="dot" value="." onclick="displaynum(dot.value)">
+                        </li>
 
-        <div class="partedecima">
-            <section class="tela">
-                <select name="telinha" id="telinha" size="5"> 0</select>
-            </section>
-        </div>
-        <div class="partedebaixo">
-            <aside class="numeros">
-                <ul class="lista-numeros">
-                    <li class="botao"><input type="button" value="7"></li>
-                    <li class="botao"><input type="button" value="8"></li>
-                    <li class="botao"><input type="button" value="9"></li>
-                    <li class="botao"><input type="button" value="4"></li>
-                    <li class="botao"><input type="button" value="5"></li>
-                    <li class="botao"><input type="button" value="6"></li>
-                    <li class="botao"><input type="button" value="1"></li>
-                    <li class="botao"><input type="button" value="2"></li>
-                    <li class="botao"><input type="button" value="3"></li>
-                    <li class="zero"><input type="button" value="0"></li>
-                    <li class="ponto"><input type="button" value="."></li>
-                    
-                </ul>
-            </aside>
+                    </ul>
+                </aside>
 
-            <aside class="operadores">
-                <ul class="lista-operadores">
-                    <li class="dividir"><input type="button" value="/"></li>
-                    <li class="delete"><input type="button" value="c"></li>
-                    <li class="vezes"><input type="button" value="x"></li>
-                    <li class="menos"><input type="button" value="-"></li>
-                    <li class="igual"><input type="button" value="="></li>
-                    <li class="mais"><input type="button" value="+"></li>
-                </ul>
-            </aside>
-        </div>
-    </main>
-
+                <aside class="operadores">
+                    <ul class="lista-operadores">
+                        <li class="dividir"><input type="button" name="divbtn" value="/"
+                                onclick="displaynum(divbtn.value)"></li>
+                        <li class="delete"><input type="button" class="text1" 
+                            name="text12" value="c" onclick="location.reload()"></li>
+                        <li class="vezes"><input type="button" name="mulbtn" value="*"
+                                onclick="displaynum(mulbtn.value)"></li>
+                        <li class="menos"><input type="button" name="subbtn" value="-"
+                                onclick="displaynum(subbtn.value)"></li>
+                        <li class="igual"><input type="button" name="eqlbtn" value="="
+                                onclick="text1.value=eval(text1.value)"></li>
+                        <li class="mais"><input type="button" name="addbtn" value="+"
+                                onclick="displaynum(addbtn.value)"></li>
+                    </ul>
+                </aside>
+            </div>
+        </main>
+    </form>
 
 
     <!--<div>
@@ -88,5 +107,10 @@
     -->
 
 </body>
+<script>
+function displaynum(n1) {
+ Calculator.text1.value = Calculator.text1.value + n1;
+ }
+ </script>
 
 </html>
